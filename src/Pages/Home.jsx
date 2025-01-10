@@ -3,9 +3,8 @@ import { useInView } from 'react-intersection-observer';
 import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import Hero from '../Components/Hero';
-import Testimonials from '../components/Testimonials';
+import Testimonials from '../Components/Testimonials';
 import FAQ from '../components/FAQ';
-import aboutLogo from '../assets/Img/about_logo.png'
 import heroImg from '../assets/Img/hero.png'
 
 function Home() {
