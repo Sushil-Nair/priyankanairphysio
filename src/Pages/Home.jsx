@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import Hero from '../Components/Hero';
 import Testimonials from '../Components/Testimonials';
-import FAQ from '../components/FAQ';
+import FAQ from '../Components/FAQ';
 import heroImg from '../assets/Img/hero.png'
 
 function Home() {
