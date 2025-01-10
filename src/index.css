@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  box-shadow: 0 6px 6px rgba(49, 34, 126, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 10px rgba(49, 34, 126, 0.5);
+}
+
+/* First, let's define our button's base styles */
+.animated-button {
+  position: relative;
+  overflow: hidden;
+  /* Setting up the transition for a smoother color change */
+  transition: color 0.3s ease;
+}
+
+/* Creating a pseudo-element that will slide in from the left */
+.animated-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  /* Start position off-screen to the left */
+  width: 100%;
+  height: 100%;
+  background: #6495ED;
+  /* The color we're transitioning to */
+  /* Transform is used for the sliding animation */
+  transition: transform 0.3s ease;
+  /* This ensures our sliding element stays behind the text */
+  z-index: 0;
+}
+
+/* When hovering, slide in the background color from left to right */
+.animated-button:hover::before {
+  transform: translateX(100%);
+  /* Move the element 100% to the right */
+}
+
+/* Let's style the text to ensure it stays visible */
+.animated-button span {
+  position: relative;
+  z-index: 1;
+  /* Keeps text above the sliding background */
+  /* Transition for the text color change */
+  transition: color 0.3s ease;
+}
+
+/* Change text color when hovering */
+.animated-button:hover span {
+  color: white;
+  /* New text color on hover */
+}
+
+
+.card-animate {
+  /* Initial state */
+  transform: scale(1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Enable GPU acceleration for smoother animations */
+  will-change: transform;
+}
+
+.card-animate:hover {
+  /* Scaled up state with enhanced shadow */
+  transform: scale(1.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
