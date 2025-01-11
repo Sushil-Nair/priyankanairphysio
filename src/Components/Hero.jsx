@@ -9,7 +9,7 @@ function Hero() {
           backgroundImage: "url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80')",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-600 opacity-80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-green-300 to-gray-500 opacity-80" />
       </div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
         <div className="text-white">
@@ -19,7 +19,7 @@ function Hero() {
             transition={{ duration: 0.8 }}
             className="text-3xl md:text-5xl font-bold mb-4"
           >
-            Your path to pain-free living starts here
+            Be Fit - Think Better, Feel Better and Move Better.
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { MdArrowCircleRight } from "react-icons/md";
+import GetACallBack from '../Components/GetACallBack';
 
 function Services() {
   const [ref, inView] = useInView({
@@ -21,25 +23,36 @@ function Services() {
 
         <div className="grid md:grid-cols-4 gap-8 " ref={ref}>
           {services.map((service, index) => (
+            
             <motion.div
-              key={service.title}
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="bg-white p-6 rounded-xl shadow-md card-animate"
+            key={service.title}
+            initial={{ opacity: 0.5, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: index * 0.2 }}
+            className="bg-white p-6 rounded-xl shadow-md flex flex-col justify-between min-h-[400px]"
             >
-              <div className="text-primary-blue text-4xl mb-4">{service.icon}</div>
-              <h2 className="text-2xl font-semibold text-text-dark mb-4">{service.title}</h2>
-              <p className="text-text-dark mb-4">{service.description}</p>
-              <ul className="list-disc list-inside text-text-dark">
-                {service.benefits.map((benefit, index) => (
-                  <li key={index}>{benefit}</li>
-                ))}
-              </ul>
+                <div>
+                  <div className="text-primary-blue text-4xl mb-4">{service.icon}</div>
+                  <h2 className="text-2xl font-semibold text-text-dark mb-4">{service.title}</h2>
+                  <p className="text-text-dark mb-4">{service.description}</p>
+                  <ul className="list-disc list-inside text-text-dark">
+                    {service.benefits.map((benefit, index) => (
+                      <li key={index}>{benefit}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="mt-auto pt-4">
+                  <a href="/booking">
+                    <MdArrowCircleRight className='flex mx-auto text-4xl hover:text-primary-blue' />
+                  </a>
+                </div>
             </motion.div>
           ))}
         </div>
       </div>
+
+      {/* Call Back */}
+      <GetACallBack />
     </div>
   );
 }

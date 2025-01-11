@@ -130,9 +130,9 @@ const services = [
     icon: "🏃‍♂️",
   },
   {
-    title: "Manual Therapy",
-    description: "Hands-on techniques to reduce pain and improve mobility.",
-    icon: "👐",
+    title: "Chronic Pain Management",
+    description: "Comprehensive approach to managing and reducing chronic pain.",
+    icon: "🌟",
   },
   {
     title: "Post-Surgery Recovery",

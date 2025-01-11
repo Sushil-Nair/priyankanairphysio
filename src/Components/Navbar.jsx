@@ -23,7 +23,7 @@ function Navbar() {
   const isBookingPage = location.pathname.includes('/booking');
 
   return (
-    <nav className="bg-primary-bg shadow-md sticky top-0 left-0 z-[99999]">
+    <nav className="bg-primary-bg shadow-md sticky top-0 left-0 z-[99998]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center overflow-hidden">
@@ -43,9 +43,9 @@ function Navbar() {
             <button onClick={() => scrollToSection('about')} className="text-text-dark hover:text-primary-blue font-medium transition-colors">
               About
             </button>
-            <button onClick={() => scrollToSection('services')} className="text-text-dark hover:text-primary-blue font-medium transition-colors">
+            <Link to="/services" className="text-text-dark hover:text-primary-blue font-medium transition-colors">
               Services
-            </button>
+            </Link>
             <button onClick={() => scrollToSection('testimonials')} className="text-text-dark hover:text-primary-blue font-medium transition-colors">
               Testimonials
             </button>
