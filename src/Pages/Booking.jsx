@@ -51,7 +51,7 @@ function Booking() {
 
   return (
     <div className="py-16 bg-secondary-gray bg-opacity-20">
-      <div className="max-w-[60%] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full sm:max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Quick Contact Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -62,10 +62,31 @@ function Booking() {
           <h2 className="text-2xl font-bold text-text-dark text-center mb-6">
             Reach Out for a Pain-Free Tomorrow
           </h2>
-          <div className="flex justify-center space-x-8">
-            <a
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
+            <button className="w-auto flex justify-center items-center px-6 py-3 bg-[#90D5FF] text-text-dark rounded-md hover:bg-opacity-90 transition-colors">
+              <a
               href="tel:9819950732"
-              className="flex text-nowrap items-center px-6 py-3 bg-[#90D5FF] text-text-dark rounded-md hover:bg-opacity-90 transition-colors"
+              className='text-nowrap flex items-center'
+              >
+                <FaPhone className="mr-2" />
+                Call Us
+              </a>
+            </button>
+
+            <button className="w-auto flex justify-center items-center px-6 py-3 bg-[#25D366] text-white rounded-md hover:bg-opacity-90 transition-colors">
+              <a
+              href="https://wa.me/9819950732"
+              target="_blank"
+              rel="noopener noreferrer"
+              className='text-nowrap flex items-center'
+              >
+                <FaWhatsapp className="text-lg mr-2" />
+                WhatsApp
+              </a>
+            </button>
+            {/* <a
+              href="tel:9819950732"
+              className="flex w-[80%] text-nowrap items-center px-6 py-3 bg-[#90D5FF] text-text-dark rounded-md hover:bg-opacity-90 transition-colors"
             >
               <FaPhone className="mr-2" />
               Call Us
@@ -74,11 +95,11 @@ function Booking() {
               href="https://wa.me/9819950732"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center px-6 py-3 bg-[#25D366] text-white rounded-md hover:bg-opacity-90 transition-colors"
+              className="flex w-[80%] items-center px-6 py-3 bg-[#25D366] text-white rounded-md hover:bg-opacity-90 transition-colors"
             >
               <FaWhatsapp className="text-lg mr-2" />
               WhatsApp
-            </a>
+            </a> */}
           </div>
         </motion.div>
 
@@ -92,18 +113,18 @@ function Booking() {
           <div className="bg-white p-6 rounded-t-lg shadow-md">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h3 className="text-lg font-semibold text-text-dark mb-2">Contact Information</h3>
-                <p className="text-text-dark mb-1">Dr. Bhoir Orthopedic Hospital</p>
-                <p className="text-text-dark mb-1">Kalyan (West), Maharashtra, 421301</p>
-                <p className="text-text-dark mb-1">Phone: +91-9819950732</p>
-                <p className="text-text-dark">Email: physiopatole@gmail.com</p>
+                <h3 className="text-base sm:text-lg font-semibold text-text-dark mb-2">Contact Information</h3>
+                <p className="text-sm sm:text-base text-text-dark mb-1">Dr. Bhoir Orthopedic Hospital</p>
+                <p className="text-sm sm:text-base text-text-dark mb-1">Kalyan (West), Maharashtra, 421301</p>
+                <p className="text-sm sm:text-base text-text-dark mb-1">Phone: +91-9819950732</p>
+                <p className="text-sm sm:text-base text-text-dark">Email: physiopatole@gmail.com</p>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-text-dark mb-2">Business Hours</h3>
-                <p className="text-text-dark mb-1">Monday - Saturday:</p>
-                <p className="text-text-dark mb-1">Morning: 11:30 AM - 1:00 PM</p>
-                <p className="text-text-dark mb-1">Evening: 07:30 PM - 09:00 PM</p>
-                <p className="text-text-dark mb-1">Sunday: 11:00 AM - 1:00 PM</p>
+                <h3 className="text-base sm:text-lg font-semibold text-text-dark mb-2">Business Hours</h3>
+                <p className="text-sm sm:text-base text-text-dark mb-1">Monday - Saturday:</p>
+                <p className="text-sm sm:text-base text-text-dark mb-1">Morning: 11:30 AM - 1:00 PM</p>
+                <p className="text-sm sm:text-base text-text-dark mb-1">Evening: 07:30 PM - 09:00 PM</p>
+                <p className="text-sm sm:text-base text-text-dark mb-1">Sunday: 11:00 AM - 1:00 PM</p>
               </div>
             </div>
           </div>
