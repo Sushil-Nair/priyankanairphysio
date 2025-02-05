@@ -84,22 +84,6 @@ function Booking() {
                 WhatsApp
               </a>
             </button>
-            {/* <a
-              href="tel:9819950732"
-              className="flex w-[80%] text-nowrap items-center px-6 py-3 bg-[#90D5FF] text-text-dark rounded-md hover:bg-opacity-90 transition-colors"
-            >
-              <FaPhone className="mr-2" />
-              Call Us
-            </a>
-            <a
-              href="https://wa.me/9819950732"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex w-[80%] items-center px-6 py-3 bg-[#25D366] text-white rounded-md hover:bg-opacity-90 transition-colors"
-            >
-              <FaWhatsapp className="text-lg mr-2" />
-              WhatsApp
-            </a> */}
           </div>
         </motion.div>
 
@@ -108,7 +92,7 @@ function Booking() {
 
         <div className="mt-12">
           <h2 className="text-2xl font-bold text-text-dark text-center mb-6">
-            Visit Our Clinic
+            Visit Our Hospital
           </h2>
           <div className="bg-white p-6 rounded-t-lg shadow-md">
             <div className="grid md:grid-cols-2 gap-6">

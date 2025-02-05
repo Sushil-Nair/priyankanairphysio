@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useState, useEffect, useRef } from 'react';
@@ -35,7 +34,7 @@ const GetACallBack = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
-            className="flex flex-col md:flex-row justify-between gap-8 items-center bg-text-dark w-full h-[300px] rounded-lg px-8 py-10 mx-auto my-auto"
+            className="flex flex-col md:flex-row sm:justify-between justify-center gap-8 items-center bg-text-dark w-full h-[300px] rounded-lg px-8 py-10 mx-auto"
           >
             <div>
                 <h2 className="text-3xl font-bold text-white text-center mb-4">Take the First Step to Better Health</h2>
